@@ -12,4 +12,16 @@ Welkom bij de CSS Poster Tool! Dit project biedt een eenvoudige en leuke manier 
 
 1. Clone dit repository naar je lokale machine:
    ```bash
-   git clone https://github.com/jouwgebruikersnaam/css-poster.git
+   git clone htt
+
+Open de index.html in je browser om te beginnen met het maken van je interactieve poster.
+Voorbeeld
+Bekijk de tool in actie op de volgende links:
+
+CSS Poster Tool
+CSS Poster Tool voor Mobiele Apparaten
+Bijdragen
+Voel je vrij om bij te dragen aan dit project! Maak een fork van het repository, stuur een pull request en help mee de tool verder te verbeteren.
+
+Licentie
+Dit project is gelicenseerd onder de MIT-licentie - zie het LICENSE bestand voor details.
