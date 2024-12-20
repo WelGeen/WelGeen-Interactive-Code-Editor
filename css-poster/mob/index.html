@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WelGeen Interactive Code Editor</title>
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<div id="title">WelGeen Interactive Code Editor</div>
+			<iframe id="imageFrame" src="template.html"></iframe>
+			<div class="editor-container">
+				<div class="button-container">
+					<form onchange="javascript: selectLayer();">
+						<p class="upper" >Selecteer een laag</p>
+						<input type="radio" name="layer" value=0 >
+						<input type="radio" name="layer" value=1 >
+						<input type="radio" name="layer" value=2 >
+					</form>
+					<hr>
+					<p class="upper" >'Welgeen' de laag</p>
+					<button id="savBtn">Save</button>
+					<button id="opnBtn">Open</button>
+					<button id="gifBtn">GIF</button>
+					<button id="imgBtn">Image</button>
+					<button id="filBtn">Filter</button>
+					<button id="bleBtn">Blend</button>
+					<button id="XBtn">X</button>
+					<button id="YBtn">Y</button>
+					<button id="scaBtn">Scale</button>
+					<button id="rotBtn">Rotate</button>
+					<hr>
+				</div>	
+			</div>
+		</div>
+		<script src="beeldbank.js"></script>
+		<script src="animations.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

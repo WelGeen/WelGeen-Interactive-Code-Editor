@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WelGeen Interactive Code Editor</title>
+		<link rel="stylesheet" href="styles.css">
+		
+	</head>
+	<body>
+		<h1>WelGeen Interactive Code Editor</h1>
+		<div class="container">
+			<!-- Linker paneel met de iframe -->
+			<div class="iframe-container">
+				<iframe id="imageFrame" src="template.html"></iframe>
+			</div>
+			<!-- Rechter paneel met knoppen en tab-content -->
+			<div class="editor-container">
+				<div class="button-container">
+					<button id="runBtn">Run</button>
+					<button id="savBtn">Save</button>
+					<button id="opnBtn">Open</button>
+					<button id="imgBtn">Fetch Image</button>
+					<select id="blendMode" name="blendMode">
+						<option value="normal">normal</option>
+						<option value="multiply">multiply</option>
+						<option value="screen">screen</option>
+						<option value="overlay">overlay</option>
+						<option value="darken">darken</option>
+						<option value="lighten">lighten</option>
+						<option value="color-dodge">color-dodge</option>
+						<option value="color-burn">color-burn</option>
+						<option value="hard-light">hard-light</option>
+						<option value="soft-light">soft-light</option>
+						<option value="difference">difference</option>
+						<option value="exclusion">exclusion</option>
+						<option value="hue">hue</option>
+						<option value="saturation">saturation</option>
+						<option value="color">color</option>
+						<option value="luminosity">luminosity</option>
+					</select>
+					
+					<select id="filter" name="filter">
+						<option value="none">none</option>
+						<option value="blur(5px)">blur</option>
+						<option value="brightness(150%)">brightness</option>
+						<option value="contrast(200%)">contrast</option>
+						<option value="grayscale(100%)">grayscale</option>
+						<option value="hue-rotate(90deg)">hue-rotate</option>
+						<option value="invert(100%)">invert</option>
+						<option value="opacity(50%)">opacity</option>
+						<option value="saturate(300%)">saturate</option>
+						<option value="sepia(100%)">sepia</option>
+					</select>
+					
+					<div class="button-container" id="animation-buttons"></div>
+				</div>
+				<pre id="imgOutput">...</pre>
+				
+				<div class="tabs">
+					<button class="tab-button active" data-tab="css-tab">CSS</button>
+					<button class="tab-button" data-tab="html-tab">HTML</button>
+				</div>
+				
+				<div class="tab-content active" id="css-tab">
+					<textarea id="css-textarea" placeholder="Edit CSS here"></textarea>
+				</div>
+				
+				<div class="tab-content" id="html-tab">
+					<textarea id="html-textarea" placeholder="Edit HTML here"></textarea>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		<script src="animations.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

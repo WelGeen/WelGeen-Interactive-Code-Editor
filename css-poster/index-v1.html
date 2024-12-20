@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Layout</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+</head>
+<body>
+    <div class="left">
+        <iframe id="imageFrame" src="template.html"></iframe>
+    </div>
+
+    <div class="right">
+        <div class="container">
+            <button id="cssBtn" class="styled-button">RUN</button>
+            <button id="savBtn" class="styled-button">SAVE</button>
+            <button id="opnBtn" class="styled-button">OPEN</button>
+            <button id="imgBtn" class="styled-button">IMG</button>
+            <div id="imgOutput">Fetched text will appear here...</div>
+            <br><br>
+            <textarea id="css-textarea" placeholder="Add CSS notes here..."></textarea>
+            <div class="button-container" id="animation-buttons"></div>
+        </div>
+    </div>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/css/css.min.js"></script>
+
+    <!-- Custom Script -->
+	 <script src="animations.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html>

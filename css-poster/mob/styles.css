@@ -1,0 +1,53 @@
+/* Standaard stijlen */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#title {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:lightgray;
+}
+.upper{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color:lightgray;
+}
+.container {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #f6f6f6;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+iframe {
+  width: 90vw;
+  height: 90vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+button{
+  margin: 2px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Responsief gedrag */
+@media (max-width: 768px) {
+	.container {
+		width: 95vw;
+        flex-direction: column;
+        padding: 2vw;
+        gap: 2vw;
+	}
+	iframe {
+		width: 90vw;
+		height: 90vw;
+	}
+}

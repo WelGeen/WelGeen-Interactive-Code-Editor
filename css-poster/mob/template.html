@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Template Layout</title>
+		
+		<style id="style-general">
+		body {margin:0; position:relative; height:100vh; overflow:hidden;}
+		div{
+			no-repeat fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			position: absolute; 
+			left: 0; 
+			top: 0;
+			width: 100%; 
+			height: 100%;
+		}
+		#layer-0{
+			background-image:url('https://welgeen.nl/beeldbank/images/bg/xx.jpg'); 
+			filter: grayscale(50%); 
+			opacity:0.5;
+		}
+		#layer-1{
+			background-image:url('https://welgeen.nl/beeldbank/images/png/vogel.png');
+		}
+		#layer-2{
+			background-image:url('https://welgeen.nl/beeldbank/images/png/vlek.png');
+		}
+		</style>
+
+		<style id="style-animations">
+		</style>
+	</head>
+	
+	<body>
+	
+		<div id="layer-0"></div>
+		
+		<div id="layer-1"></div>
+		
+		<div id="layer-2"></div>
+	</body>
+	
+</html>
